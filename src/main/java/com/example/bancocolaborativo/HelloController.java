@@ -25,9 +25,9 @@ public class HelloController {
     private Label lblError;
 
     @FXML
-    private void login(ActionEvent event) throws IOException {
-        if(txtUser.getText().equals("Jeringas") && txtpass.getText().equals("tacogalleta123")){
-            Parent root = FXMLLoader.load(getClass().getResource("loginSuccess.fxml"));
+    private void onLogin(ActionEvent event) throws IOException {
+        if(txtUser.getText().equals("Jeringas") && txtPass.getText().equals("tacogalleta123")){
+            Parent root = FXMLLoader.load(getClass().getResource("loginAcceder.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
