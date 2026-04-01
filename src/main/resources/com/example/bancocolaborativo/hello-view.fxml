@@ -29,7 +29,12 @@
             </Label>
             <TextField fx:id="txtUser" layoutX="22.0" layoutY="165.0" />
             <TextField fx:id="txtPass" layoutX="288.0" layoutY="165.0" />
-            <Button layoutX="203.0" layoutY="223.0" mnemonicParsing="false" text="LOGIN" />
+            <Button layoutX="203.0" layoutY="223.0" mnemonicParsing="false" onAction="#onLogin" text="LOGIN" />
+            <Label fx:id="lblError" layoutX="121.0" layoutY="303.0" text="ERROR, DATOS INCORRECTOS" textFill="RED" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
