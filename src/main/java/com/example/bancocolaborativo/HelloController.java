@@ -14,8 +14,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+
     @FXML
     private TextField txtUser;
 
@@ -27,18 +26,13 @@ public class HelloController {
     @FXML
     private void onLogin(ActionEvent event) throws IOException {
         if(txtUser.getText().equals("Jeringas") && txtPass.getText().equals("tacogalleta123")){
-            Parent root = FXMLLoader.load(getClass().getResource("loginAcceder.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("LoginAcceder.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         }else {
             lblError.setVisible(true);
         }
-    }
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
     }
 
 
