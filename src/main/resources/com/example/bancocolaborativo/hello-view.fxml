@@ -5,37 +5,37 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="420.0" prefWidth="498.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.bancocolaborativo.HelloController">
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="498.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bancocolaborativo.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <children>
-      <Pane prefHeight="514.0" prefWidth="559.0">
-         <children>
-            <Label layoutX="153.0" layoutY="14.0" prefHeight="50.0" prefWidth="152.0" text="BANCO AEX" textAlignment="CENTER" textFill="#ff1919" textOverrun="CENTER_WORD_ELLIPSIS">
-               <font>
-                  <Font name="Impact" size="34.0" />
-               </font>
-            </Label>
-            <Label layoutX="40.0" layoutY="130.0" prefHeight="26.0" prefWidth="113.0" text="USUARIO" textFill="#1e1e1e">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="288.0" layoutY="130.0" text="CONTRASEÑA">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txtUser" layoutX="22.0" layoutY="165.0" />
-            <TextField fx:id="txtPass" layoutX="288.0" layoutY="165.0" />
-            <Button layoutX="203.0" layoutY="223.0" mnemonicParsing="false" onAction="#onLogin" text="LOGIN" />
-            <Label fx:id="lblError" layoutX="121.0" layoutY="303.0" text="ERROR, DATOS INCORRECTOS" textFill="RED" visible="false">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-   </children>
+    <children>
+        <Pane prefHeight="514.0" prefWidth="559.0" stylesheets="@estiloLogin.css">
+            <children>
+                <Label id="title-label" layoutX="153.0" layoutY="14.0" prefHeight="50.0" prefWidth="152.0" text="BANCO AEX" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Impact" size="34.0" />
+                    </font>
+                </Label>
+                <Label layoutX="40.0" layoutY="130.0" prefHeight="26.0" prefWidth="113.0" text="USUARIO" textFill="#1e1e1e">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="288.0" layoutY="130.0" text="CONTRASEÑA">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtUser" layoutX="22.0" layoutY="165.0" styleClass="label-field" />
+                <TextField fx:id="txtPass" layoutX="288.0" layoutY="165.0" styleClass="label-field" />
+                <Button layoutX="179.0" layoutY="242.0" mnemonicParsing="false" onAction="#onLogin" text="LOGIN" />
+                <Label fx:id="lblError" layoutX="121.0" layoutY="303.0" text="ERROR, DATOS INCORRECTOS" textFill="RED" visible="false">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
 </VBox>
