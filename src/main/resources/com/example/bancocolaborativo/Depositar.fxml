@@ -10,4 +10,36 @@
             xmlns:fx="http://javafx.com/fxml"
             prefHeight="400.0" prefWidth="600.0">
 
+    <children>
+        <Label layoutX="230.0" layoutY="40.0" text="DEPOSITAR" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <Label layoutX="170.0" layoutY="120.0" text="Cantidad a depositar:" style="-fx-font-size: 14px;" />
+
+        <TextField fx:id="txtDeposito"
+                   layoutX="170.0"
+                   layoutY="150.0"
+                   prefWidth="250.0"
+                   promptText="Ingresa la cantidad" />
+
+        <Button layoutX="240.0"
+                layoutY="200.0"
+                mnemonicParsing="false"
+                onAction="#depositarDinero"
+                text="Depositar"
+                prefWidth="120.0"/>
+
+        <Label fx:id="lblMensaje"
+               layoutX="150.0"
+               layoutY="250.0"
+               style="-fx-font-size: 14px;" />
+
+        <Button layoutX="220.0"
+                layoutY="300.0"
+                mnemonicParsing="false"
+                onAction="#regresarInicio"
+                text="Regresar al inicio"
+                prefWidth="150.0"/>
+    </children>
+
+
 </AnchorPane>
