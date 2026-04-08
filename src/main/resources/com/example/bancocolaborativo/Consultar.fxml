@@ -8,6 +8,24 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.bancocolaborativo.ConsultarController"
             prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label layoutX="200.0" layoutY="40.0" text="CONSULTAR SALDO" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <Label fx:id="lblSaldo"
+               layoutX="170.0"
+               layoutY="150.0"
+               text="Tu saldo es: $0.0"
+               style="-fx-font-size: 16px;" />
+
+        <Button layoutX="220.0"
+                layoutY="250.0"
+                mnemonicParsing="false"
+                onAction="#regresarInicio"
+                text="Regresar al inicio"
+                prefWidth="150.0"/>
+    </children>
 
 </AnchorPane>
